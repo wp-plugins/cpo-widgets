@@ -13,6 +13,8 @@ Add essential functionality to your WordPress site with a set of useful widgets 
 
 [CPO Widgets](http://cpothemes.com/plugin/cpo-widgets) is a WordPress plugin that provides you with an number of essential widgets for any website. They give you additional functionality to easily display more varied content in your sidebars, such as images or tweets.
 
+Although this plugin is meant to be used with the [premium themes by CPOThemes](http://cpothemes.com/themes), they are completely standalone and will work equally well with any WordPress theme you use.
+
 This plugin adds the following available widgets:
 
 Recent Posts - A more powerful version of the default recent posts widget provided by WordPress. This widget allows you to also display a thumbnail of each post.
@@ -47,7 +49,11 @@ Flickr Images - Show your latest images from a Flickr account right into your si
 
 == Screenshots ==
 
-1. A list of the available widgets
+1. Display your most recent posts with a more stylish design
+2. Insert images into your sidebars without having to code HTML
+3. Add your latest tweets without cumbersome setting pages
+4. Show the latest Flickr photos from a Flirck account
+5. Display a list of links to your social profiles
 
 == Changelog ==
 
