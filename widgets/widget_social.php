@@ -4,9 +4,9 @@ if(!class_exists('Ctwg_Widget_Social')){
 	class Ctwg_Widget_Social extends WP_Widget{
 		
 		function Ctwg_Widget_Social(){
-			$widget_ops = array('classname' => 'cpotheme-social', 'description' => __('This widget lets you display an advertising banner of any size.', 'cpocore'));
-			$this->WP_Widget('cpotheme-social', __('CPO - Social Links', 'cpocore'), $widget_ops);
-			$this->alt_option_name = 'cpotheme-social';
+			$widget_ops = array('classname' => 'ctwg-social', 'description' => __('This widget lets you display an advertising banner of any size.', 'cpocore'));
+			$this->WP_Widget('ctwg-social', __('CPO - Social Links', 'cpocore'), $widget_ops);
+			$this->alt_option_name = 'ctwg-social';
 		}
 
 		function widget($args, $instance){

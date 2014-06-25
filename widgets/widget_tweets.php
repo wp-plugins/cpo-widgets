@@ -4,8 +4,8 @@ if(!class_exists('Ctwg_Widget_Tweets')){
 	class Ctwg_Widget_Tweets extends WP_Widget{
 		
 		function Ctwg_Widget_Tweets(){
-			$widget_ops = array('classname' => 'cpotheme-tweets', 'description' => __('Displays the latest tweets for a specific Twitter user.', 'cpocore'));
-			$this->WP_Widget('cpotheme-twitter-stream', __('CPO - Twitter Stream', 'cpocore'), $widget_ops);
+			$widget_ops = array('classname' => 'ctwg-tweets', 'description' => __('Displays the latest tweets for a specific Twitter user.', 'cpocore'));
+			$this->WP_Widget('ctwg-twitter-stream', __('CPO - Twitter Stream', 'cpocore'), $widget_ops);
 			$this->alt_option_name = 'ctwg_twitter_stream';
 		}
 

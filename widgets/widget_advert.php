@@ -4,9 +4,9 @@ if(!class_exists('Ctwg_Widget_Advert')){
 	class Ctwg_Widget_Advert extends WP_Widget{
 		
 		function Ctwg_Widget_Advert(){
-			$widget_ops = array('classname' => 'cpotheme-advert', 'description' => __('This widget lets you display an advertising banner of any size.', 'cpocore'));
-			$this->WP_Widget('cpotheme-advert', __('CPO - Ad Space', 'cpocore'), $widget_ops);
-			$this->alt_option_name = 'cpotheme-advert';
+			$widget_ops = array('classname' => 'ctwg-advert', 'description' => __('This widget lets you display an advertising banner of any size.', 'cpocore'));
+			$this->WP_Widget('ctwg-advert', __('CPO - Ad Space', 'cpocore'), $widget_ops);
+			$this->alt_option_name = 'ctwg-advert';
 		}
 
 		function widget($args, $instance){

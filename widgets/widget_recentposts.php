@@ -4,16 +4,16 @@ if(!class_exists('Ctwg_Widget_RecentPosts')){
 	class Ctwg_Widget_RecentPosts extends WP_Widget{
 		
 		function Ctwg_Widget_RecentPosts(){
-			$widget_ops = array('classname' => 'cpotheme-recent', 'description' => __('Displays the most recent posts with date and thumbnail.', 'cpocore'));
-			$this->WP_Widget('cpotheme-recent-posts', __('CPO - Recent Posts', 'cpocore'), $widget_ops);
-			$this->alt_option_name = 'cpotheme-recent-posts';
+			$widget_ops = array('classname' => 'ctwg-recent', 'description' => __('Displays the most recent posts with date and thumbnail.', 'cpocore'));
+			$this->WP_Widget('ctwg-recent-posts', __('CPO - Recent Posts', 'cpocore'), $widget_ops);
+			$this->alt_option_name = 'ctwg-recent-posts';
 			add_action('save_post', array(&$this, 'flush_widget_cache'));
 			add_action('deleted_post', array(&$this, 'flush_widget_cache'));
 			add_action('switch_theme', array(&$this, 'flush_widget_cache'));
 		}
 
 		function widget($args, $instance){
-			$cache = wp_cache_get('cpotheme-recent-posts', 'widget');
+			$cache = wp_cache_get('ctwg-recent-posts', 'widget');
 			if(!is_array($cache)) $cache = array();
 			
 			if(isset($cache[$args['widget_id']])){
@@ -50,7 +50,7 @@ if(!class_exists('Ctwg_Widget_RecentPosts')){
 			wp_reset_postdata();
 			endif;
 			$cache[$args['widget_id']] = ob_get_flush();
-			wp_cache_add('cpotheme-recent-posts', $cache, 'widget');
+			wp_cache_add('ctwg-recent-posts', $cache, 'widget');
 		}
 
 		function update($new_instance, $old_instance){
@@ -59,8 +59,8 @@ if(!class_exists('Ctwg_Widget_RecentPosts')){
 			$instance['number'] = (int) $new_instance['number'];
 			$this->flush_widget_cache();
 			$alloptions = wp_cache_get('alloptions', 'options');
-			if(isset($alloptions['cpotheme-recent-posts']))
-			delete_option('cpotheme-recent-posts');
+			if(isset($alloptions['ctwg-recent-posts']))
+			delete_option('ctwg-recent-posts');
 			return $instance;
 		}
 

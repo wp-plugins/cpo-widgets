@@ -3,7 +3,7 @@
 Plugin Name: CPO Widgets
 Description: A number of useful widgets that add some essential functionality to your WordPress site. There widgets are intended to let you add more engaging content in your sidebars, such as a Twitter timeline, recent posts, image banners, or social media links.
 Author: CPOThemes
-Version: 1.0.0
+Version: 1.0.1
 Author URI: http://www.cpothemes.com
 */
 

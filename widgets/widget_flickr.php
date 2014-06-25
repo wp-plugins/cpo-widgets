@@ -4,8 +4,8 @@ if(!class_exists('Ctwg_Widget_Flickr')){
 	class Ctwg_Widget_Flickr extends WP_Widget {
 		
 		function Ctwg_Widget_Flickr() {
-			$widget_ops = array('classname' => 'cpotheme-flickr', 'description' => __('Displays a stream of photos from Flickr.', 'cpocore'));
-			$this->WP_Widget('cpotheme-flickr', __('CPO - Flickr Stream', 'cpocore'), $widget_ops);
+			$widget_ops = array('classname' => 'ctwg-flickr', 'description' => __('Displays a stream of photos from Flickr.', 'cpocore'));
+			$this->WP_Widget('ctwg-flickr', __('CPO - Flickr Stream', 'cpocore'), $widget_ops);
 		}
 
 		
