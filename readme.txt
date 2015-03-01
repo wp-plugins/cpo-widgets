@@ -2,12 +2,14 @@
 Contributors: cpothemes
 Donate link: http://example.com/
 Tags: recent, recent posts, banner, ad, advertising, twitter, tweet, social, icons, social profile, flickr, badge, image, latest, items, widget, sidebar
-Requires at least: 3.5
-Tested up to: 3.8.1
-Stable tag: trunk
-License: GPLv2
+Requires at least: 3.9
+Tested up to: 4.1.0
+Stable tag: 1.0.2
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Add essential functionality to your WordPress site with a set of useful widgets for your sidebars.
+
+Add essential functionality to your WordPress sidebars with a set of useful widgets.
 
 == Description ==
 
@@ -17,19 +19,19 @@ Although this plugin is meant to be used with the [premium themes by CPOThemes](
 
 This plugin adds the following available widgets:
 
-Recent Posts - A more powerful version of the default recent posts widget provided by WordPress. This widget allows you to also display a thumbnail of each post.
+**Recent Posts** - A more powerful version of the default recent posts widget provided by WordPress. This widget allows you to display a thumbnail of each post and also to choose which post type to display.
 
-Ad Space - Easily insert images without having to resort to writing HTML in a text widget. You can also link the image or add your own advertising code.
+**Ad Space** - Easily insert images without having to resort to writing HTML in a text widget. You can also link the image or add your own advertising code.
 
-Social Profiles - Add links to your preferred social profiles, being able to choose from a long list of available social networks.
+**Social Profiles** - Add links to your preferred social profiles, being able to choose from a long list of available social networks.
 
-Recent Tweets - Display your latest tweets from any Twitter account. This widgets provides support for the Twitter API 1.1.
+**Recent Tweets** - Display your latest tweets from any Twitter account. This widgets provides support for the **Twitter API 1.1**.
 
-Flickr Images - Show your latest images from a Flickr account right into your sidebar, and linking to your Flickr gallery.
+**Flickr Images** - Show your latest images from a Flickr account right into your sidebar, and linking to your Flickr gallery.
 
-== Plugin Features ==
+== Included Widgets ==
 
-* Recent Posts widget
+* Recent Posts
 * Ad Space widget
 * Social Profiles widget
 * Recent Tweets widget
@@ -38,9 +40,22 @@ Flickr Images - Show your latest images from a Flickr account right into your si
 
 == Installation ==
 
-1. Upload `plugin-name.php` to the `/wp-content/plugins/` directory
-2. Activate the plugin through the 'Plugins' menu in WordPress
-3. You are now ready to use the shortcodes from the WordPress Visual Editor
+= Installing Through The WordPress Admin =
+
+1. Download the ZIP file
+2. In your WordPress admin area, go to Plugins > Add Plugin, and select Upload Plugin
+3. Upload the ZIP file and installation will commence
+4. Activate the plugin through the 'Plugins' menu in WordPress
+5. Make sure to check the **Settings > CPO Shortcodes** page before using it right away!
+6. You are now ready to use the shortcodes from the WordPress Visual Editor
+
+= Installing Through FTP =
+
+1. Download the ZIP file and unpack it
+2. Upload the entire **cpo-shortcodes** to the **/wp-content/plugins/** directory
+3. Activate the plugin through the 'Plugins' menu in WordPress
+4. Make sure to check the **Settings > CPO Shortcodes** page before using it right away!
+5. You are now ready to use the shortcodes from the WordPress Visual Editor
 
 == Frequently Asked Questions ==
 
@@ -56,6 +71,14 @@ Flickr Images - Show your latest images from a Flickr account right into your si
 5. Display a list of links to your social profiles
 
 == Changelog ==
+
+= 1.0.2 =
+* Removed Twitter icon from Latest Tweets to save space.
+* Added a post type field to recent posts widget, so you may choose which ones to display.
+* Fixed the styling on recent posts to accommodate posts without thumbnails.
+
+= 1.0.1 =
+* Minor fixes to styling.
 
 = 1.0 =
 * Plugin release, yay!
