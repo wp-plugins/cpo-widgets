@@ -1,10 +1,10 @@
 === CPO Widgets ===
 Contributors: cpothemes
-Donate link: http://example.com/
-Tags: recent, recent posts, banner, ad, advertising, twitter, tweet, social, icons, social profile, flickr, badge, image, latest, items, widget, sidebar
+Donate link: http://www.cpothemes.com
+Tags: recent, recent posts, author, author profile, author badge, banner, ad, advertising, twitter, tweet, social, icons, social profile, flickr, badge, image, latest, items, widget, sidebar
 Requires at least: 3.9
-Tested up to: 4.1.0
-Stable tag: 1.0.2
+Tested up to: 4.3
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -29,14 +29,16 @@ This plugin adds the following available widgets:
 
 **Flickr Images** - Show your latest images from a Flickr account right into your sidebar, and linking to your Flickr gallery.
 
+**Author Badge** - Display the profile of a specific user, showing the name, image, and profile description.
+
 == Included Widgets ==
 
 * Recent Posts
-* Ad Space widget
+* Image Banner widget
 * Social Profiles widget
 * Recent Tweets widget
 * Flickr Images widget
-* Widgets are made to be responsive
+* Author Badge widget
 
 == Installation ==
 
@@ -71,6 +73,10 @@ This plugin adds the following available widgets:
 5. Display a list of links to your social profiles
 
 == Changelog ==
+
+= 1.0.2 =
+* Added a new Author Badge widget, which displays a specific author.
+* Updated all widgets to reflect better coding practices.
 
 = 1.0.2 =
 * Removed Twitter icon from Latest Tweets to save space.
